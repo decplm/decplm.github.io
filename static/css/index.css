@@ -690,6 +690,58 @@ code {
   .content.has-text-justified {
     font-size: 1rem;
   }
+  
+  /* Curriculum table mobile responsive - stack Phase and Demo columns */
+  .table.is-fullwidth {
+    display: block;
+  }
+  
+  .table.is-fullwidth thead {
+    display: none;
+  }
+  
+  .table.is-fullwidth tbody {
+    display: block;
+  }
+  
+  .table.is-fullwidth tr {
+    display: block;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    background: var(--background-primary);
+  }
+  
+  .table.is-fullwidth td {
+    display: block;
+    width: 100% !important;
+    text-align: left !important;
+    padding: 0.75rem 0;
+    border: none;
+  }
+  
+  .table.is-fullwidth td:first-child {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-align: center !important;
+  }
+  
+  .table.is-fullwidth td:nth-child(2) {
+    text-align: center !important;
+    margin: 0.75rem 0;
+  }
+  
+  .table.is-fullwidth td:nth-child(2) img {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  
+  .table.is-fullwidth td:last-child {
+    margin-top: 0.75rem;
+    text-align: left !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
