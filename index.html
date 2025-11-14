@@ -463,11 +463,14 @@
                      loading="lazy"
                      style="max-width:70%; height:auto;"/>
               </div>
-              <p class="content" style="margin-top:0.5rem;">
-                By minimizing the mean squared distance between matched constellations, the policy jointly
-                captures position and orientation alignment, removing the need for explicit mechanical couplings
-                or hand-designed force-balancing strategies.
+              <p class="content">
+                By minimizing the mean squared distance between each pair of <span style="color:#1e88e5;">blue</span>
+                (robot-anchored) and <span style="color:#43a047;">green</span> (payload-anchored) constellation points, the
+                policy aligns both position and orientation of the robot relative to its contact frame. This allows
+                the robots to behave as if rigidly linked to the payload, without explicit mechanical couplings or
+                hand-designed force-balancing strategies.
               </p>
+              
             </div>
 
             <div class="column is-full">
