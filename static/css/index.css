@@ -116,10 +116,31 @@ body {
 /* Publication Content Styling */
 .publication-title {
     font-family: 'Inter', sans-serif !important;
-    font-weight: 800 !important;
+    font-weight: 400 !important;
     color: var(--text-primary) !important;
     margin-bottom: 2rem !important;
     line-height: 1.1 !important;
+}
+
+.publication-title .highlight {
+    font-weight: 700 !important;
+    color: #10b981 !important;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1));
+    padding: 0 0.15em;
+    border-radius: 4px;
+}
+
+.publication-title .no-break {
+    white-space: nowrap;
+}
+
+.publication-subtitle {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 0.85em;
+    font-weight: 300;
+    color: var(--text-primary);
+    margin-top: 0.5rem;
 }
 
 .publication-banner {
@@ -148,7 +169,7 @@ body {
 .publication-authors {
     font-family: 'Inter', sans-serif !important;
     font-weight: 500;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .publication-venue {
@@ -241,6 +262,8 @@ body {
     height: 100%;
     border-radius: var(--border-radius-lg);
 }
+
+/* Video controls - default behavior (always visible) */
 
 .publication-body img {
   border-radius: var(--border-radius);
@@ -614,6 +637,19 @@ code {
     margin-bottom: 1.5rem !important;
   }
   
+  .publication-title .no-break {
+    white-space: normal;
+  }
+  
+  .publication-subtitle {
+    white-space: normal;
+    font-size: 0.9em;
+  }
+  
+  .publication-subtitle .no-break {
+    white-space: nowrap;
+  }
+  
   .publication-authors {
     font-size: 1rem !important;
   }
@@ -653,6 +689,58 @@ code {
   
   .content.has-text-justified {
     font-size: 1rem;
+  }
+  
+  /* Curriculum table mobile responsive - stack Phase and Demo columns */
+  .table.is-fullwidth {
+    display: block;
+  }
+  
+  .table.is-fullwidth thead {
+    display: none;
+  }
+  
+  .table.is-fullwidth tbody {
+    display: block;
+  }
+  
+  .table.is-fullwidth tr {
+    display: block;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    background: var(--background-primary);
+  }
+  
+  .table.is-fullwidth td {
+    display: block;
+    width: 100% !important;
+    text-align: left !important;
+    padding: 0.75rem 0;
+    border: none;
+  }
+  
+  .table.is-fullwidth td:first-child {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-align: center !important;
+  }
+  
+  .table.is-fullwidth td:nth-child(2) {
+    text-align: center !important;
+    margin: 0.75rem 0;
+  }
+  
+  .table.is-fullwidth td:nth-child(2) img {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  
+  .table.is-fullwidth td:last-child {
+    margin-top: 0.75rem;
+    text-align: left !important;
   }
 }
 

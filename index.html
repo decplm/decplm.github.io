@@ -65,7 +65,7 @@
   <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
-  <title>Multi-Quadruped Cooperative Object Transport: Learning Decentralized Pinch-Lift-Move | Project Page</title>
+  <title>decPLM</title>
   
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -205,7 +205,7 @@
             <div class="column has-text-centered">
               <h1 class="title is-1 publication-title">
                 Multi-Quadruped Cooperative Object Transport:<br>
-                Learning Decentralized Pinch-Lift-Move
+                <span class="publication-subtitle">Learning <span class="highlight">Dec</span>entralized <span class="no-break"><span class="highlight">P</span>inch-<span class="highlight">L</span>ift-<span class="highlight">M</span>ove</span></span>
               </h1>
 
               <div class="is-size-5 publication-authors">
@@ -251,9 +251,7 @@
 
               <!-- Project TL;DR -->
               <p class="subtitle is-5" style="margin-top:1.5rem;">
-                decPLM is a decentralized reinforcement learning framework that lets teams of quadruped-arm robots
-                pinch, lift, and transport ungraspable objects using only local sensing and contact forces&mdash;no communication,
-                no rigid coupling&mdash;and generalizes from 2-robot training to 2-10 robot teams and diverse payloads.
+                decPLM is a decentralized reinforcement learning framework that enables teams of quadruped-arm robots to pinch, lift, and transport ungraspable objects using only local sensing and contact forces; without communication or rigid coupling. Trained with just two robots, the policy generalizes to teams of 2-10 robots and diverse object geometries and masses.
               </p>
             </div>
           </div>
@@ -308,7 +306,7 @@
     <section class="section">
       <div class="columns is-centered is-multiline">
         <div class="column is-three-fifths">
-          <h2 class="title is-3 has-text-centered">Decentralized Pinch-Lift-Move (decPLM)</h2>
+          <h2 class="title is-3 has-text-centered">Decentralized <span class="no-break">Pinch-Lift-Move</span> (decPLM)</h2>
           <p class="content has-text-centered" style="margin-bottom:1.5rem;">
             We train decPLM in large-scale parallel simulation and evaluate it on multi-robot teams,
             diverse payloads, and real quadruped-arm platforms.
@@ -316,7 +314,7 @@
           <div class="columns is-multiline">
             <div class="column is-half">
               <h3 class="title is-5" style="margin-bottom: 0.75rem;">Training in Simulation</h3>
-              <video controls muted loop width="100%" preload="metadata" style="border-radius: var(--border-radius);">
+              <video controls muted loop autoplay playsinline width="100%" preload="metadata" style="border-radius: var(--border-radius);">
                 <source src="static/videos/training.mp4" type="video/mp4">
               </video>
               <p class="content is-size-7" style="margin-top:0.5rem;">
@@ -326,7 +324,7 @@
             </div>
             <div class="column is-half">
               <h3 class="title is-5" style="margin-bottom: 0.75rem;">Generalization to 2-10 Robots</h3>
-              <video controls muted loop width="100%" preload="metadata" style="border-radius: var(--border-radius);">
+              <video controls muted loop autoplay playsinline width="100%" preload="metadata" style="border-radius: var(--border-radius);">
                 <source src="static/videos/generalization_2_to_10_robot_grid.mp4" type="video/mp4">
               </video>
               <p class="content is-size-7" style="margin-top:0.5rem;">
@@ -336,7 +334,7 @@
             </div>
             <div class="column is-half">
               <h3 class="title is-5" style="margin-bottom: 0.75rem;">Evaluation on Diverse Payloads</h3>
-              <video controls muted loop width="100%" preload="metadata" style="border-radius: var(--border-radius);">
+              <video controls muted loop autoplay playsinline width="100%" preload="metadata" style="border-radius: var(--border-radius);">
                 <source src="static/videos/evaluation_on_diverse_payload.mp4" type="video/mp4">
               </video>
               <p class="content is-size-7" style="margin-top:0.5rem;">
@@ -346,7 +344,7 @@
             </div>
             <div class="column is-half">
               <h3 class="title is-5" style="margin-bottom: 0.75rem;">Sim-to-Real Transfer (2 robots)</h3>
-              <video controls muted loop width="100%" preload="metadata" style="border-radius: var(--border-radius);">
+              <video controls muted loop autoplay playsinline width="100%" preload="metadata" style="border-radius: var(--border-radius);">
                 <source src="static/videos/sim2real_2_robots.mp4" type="video/mp4">
               </video>
               <p class="content is-size-7" style="margin-top:0.5rem;">
@@ -356,7 +354,7 @@
             </div>
             <div class="column is-half">
               <h3 class="title is-5" style="margin-bottom: 0.75rem;">Sim-to-Real Transfer (3 robots)</h3>
-              <video controls muted loop width="100%" preload="metadata" style="border-radius: var(--border-radius);">
+              <video controls muted loop autoplay playsinline width="100%" preload="metadata" style="border-radius: var(--border-radius);">
                 <source src="static/videos/sim2real_3_robots.mp4" type="video/mp4">
               </video>
               <p class="content is-size-7" style="margin-top:0.5rem;">
@@ -366,7 +364,7 @@
             </div>
             <div class="column is-half">
               <h3 class="title is-5" style="margin-bottom: 0.75rem;">Sim-to-Real Transfer (4 robots)</h3>
-              <video controls muted loop width="100%" preload="metadata" style="border-radius: var(--border-radius);">
+              <video controls muted loop autoplay playsinline width="100%" preload="metadata" style="border-radius: var(--border-radius);">
                 <source src="static/videos/sim2real_4_robots.mp4" type="video/mp4">
               </video>
               <p class="content is-size-7" style="margin-top:0.5rem;">
@@ -381,7 +379,7 @@
 
     
     <!-- APPROACH -->
-    <section class="hero teaser">
+    <section class="section">
       <div class="container is-max-desktop">
         <h2 class="title is-3 has-text-centered">Approach</h2>
         <div class="columm">
@@ -403,7 +401,6 @@
                 interactions with the payload.
               </p>
             </div>
-            
 
             <div class="column is-full">
               <h3 class="title is-4" style="margin-bottom:0.75rem;">2. Hierarchical Loco-Manipulation Architecture</h3>
@@ -411,7 +408,7 @@
                 <img src="static/images/policy_overview.png"
                      alt="Hierarchical decPLM policy with shared high-level and low-level controllers for each quadruped-arm robot"
                      loading="lazy"
-                     style="max-width:70%; height:auto;"/>
+                     style="max-width:80%; height:auto;"/>
               </div>
               <p class="content">
                 decPLM uses a hierarchical policy structure that separates high-level manipulation from low-level
@@ -425,7 +422,7 @@
               </ul>
               
               <p class="content">
-                The <strong>high-level policy</strong> &pi;<sub>&theta;<sub>h</sub></sub> maps these inputs to:
+                The <strong>high-level policy</strong> &pi;<sup>h</sup><sub>&theta;<sub>h</sub></sub> maps these inputs to:
               </p>
               
               <ul class="content" style="margin-left:1.5rem;">
@@ -463,13 +460,16 @@
                 <img src="static/images/constellation_reward.png"
                      alt="Constellation reward aligning virtual points on the robot and payload to enforce rigid-like contact"
                      loading="lazy"
-                     style="max-width:70%; height:auto;"/>
+                     style="max-width:80%; height:auto;"/>
               </div>
-              <p class="content" style="margin-top:0.5rem;">
-                By minimizing the mean squared distance between matched constellations, the policy jointly
-                captures position and orientation alignment, removing the need for explicit mechanical couplings
-                or hand-designed force-balancing strategies.
+              <p class="content">
+                By minimizing the mean squared distance between each pair of <span style="color:#1e88e5;">blue</span>
+                (robot-anchored) and <span style="color:#43a047;">green</span> (payload-anchored) constellation points, the
+                policy aligns both position and orientation of the robot relative to its contact frame. This allows
+                the robots to behave as if rigidly linked to the payload, without explicit mechanical couplings or
+                hand-designed force-balancing strategies.
               </p>
+              
             </div>
 
             <div class="column is-full">
@@ -535,18 +535,8 @@
               
                 </tbody>
               </table>
-              
- 
-            <!-- <div class="column is-full">
-              <h3 class="title is-4" style="margin-bottom:0.75rem;">5. Emergent Coordination and Generalization</h3>
-              <p class="content">
-                Because all robots share the same high-level policy parameters, coordination emerges implicitly:
-                robots synchronize pinch and lift, distribute contact forces, and collectively track the payload
-                trajectory without communication. Policies trained with only <strong>two</strong> robots generalize to
-                teams of up to <strong>ten</strong> robots, show robust performance under dynamics randomization,
-                and transfer to real hardware for lightweight payloads.
-              </p>
-            </div> -->
+            </div>
+
           </div>
         </div>
       </div>
