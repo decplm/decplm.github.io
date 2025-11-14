@@ -119,6 +119,36 @@ function setupVideoCarouselAutoplay() {
     });
 }
 
+// Autoplay all videos when scrolled into view
+function setupAllVideosAutoplay() {
+    // Get all videos except the banner video (which already has autoplay)
+    const allVideos = document.querySelectorAll('video:not([id="tree"])');
+    
+    if (allVideos.length === 0) return;
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const video = entry.target;
+            if (entry.isIntersecting) {
+                // Video is in view, play it
+                video.play().catch(e => {
+                    // Autoplay failed, probably due to browser policy
+                    console.log('Autoplay prevented:', e);
+                });
+            } else {
+                // Video is out of view, pause it
+                video.pause();
+            }
+        });
+    }, {
+        threshold: 0.3 // Trigger when 30% of the video is visible
+    });
+    
+    allVideos.forEach(video => {
+        observer.observe(video);
+    });
+}
+
 $(document).ready(function() {
     // Check for click events on the navbar burger icon
 
@@ -138,5 +168,8 @@ $(document).ready(function() {
     
     // Setup video autoplay for carousel
     setupVideoCarouselAutoplay();
+    
+    // Setup autoplay for all videos when scrolled into view
+    setupAllVideosAutoplay();
 
 })

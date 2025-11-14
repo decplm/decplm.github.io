@@ -229,7 +229,7 @@ body {
 }
 
 .publication-video:hover {
-    transform: translateY(-4px);
+    /* transform: translateY(-4px); */
     box-shadow: var(--shadow-xl);
 }
 
