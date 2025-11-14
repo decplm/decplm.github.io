@@ -116,10 +116,31 @@ body {
 /* Publication Content Styling */
 .publication-title {
     font-family: 'Inter', sans-serif !important;
-    font-weight: 800 !important;
+    font-weight: 400 !important;
     color: var(--text-primary) !important;
     margin-bottom: 2rem !important;
     line-height: 1.1 !important;
+}
+
+.publication-title .highlight {
+    font-weight: 700 !important;
+    color: #10b981 !important;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1));
+    padding: 0 0.15em;
+    border-radius: 4px;
+}
+
+.publication-title .no-break {
+    white-space: nowrap;
+}
+
+.publication-subtitle {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 0.85em;
+    font-weight: 300;
+    color: var(--text-primary);
+    margin-top: 0.5rem;
 }
 
 .publication-banner {
@@ -148,7 +169,7 @@ body {
 .publication-authors {
     font-family: 'Inter', sans-serif !important;
     font-weight: 500;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .publication-venue {
@@ -612,6 +633,19 @@ code {
     font-size: 2.5rem !important;
     line-height: 1.2 !important;
     margin-bottom: 1.5rem !important;
+  }
+  
+  .publication-title .no-break {
+    white-space: normal;
+  }
+  
+  .publication-subtitle {
+    white-space: normal;
+    font-size: 0.9em;
+  }
+  
+  .publication-subtitle .no-break {
+    white-space: nowrap;
   }
   
   .publication-authors {
