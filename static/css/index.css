@@ -263,6 +263,8 @@ body {
     border-radius: var(--border-radius-lg);
 }
 
+/* Video controls - default behavior (always visible) */
+
 .publication-body img {
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-md);

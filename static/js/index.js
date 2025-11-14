@@ -149,6 +149,51 @@ function setupAllVideosAutoplay() {
     });
 }
 
+// Video controls setup - hide by default on mobile, show on tap
+function setupVideoControls() {
+    // Check if device is mobile/touch
+    const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    
+    // Only apply hiding behavior on mobile
+    if (!isMobile) {
+        return; // Keep default controls visible on desktop
+    }
+    
+    const videos = document.querySelectorAll('video[controls]');
+    
+    videos.forEach(video => {
+        // Hide controls initially on mobile
+        video.removeAttribute('controls');
+        
+        let controlsTimeout;
+        
+        // Show controls on tap/touch
+        video.addEventListener('touchstart', function(e) {
+            clearTimeout(controlsTimeout);
+            this.setAttribute('controls', 'controls');
+            
+            // Hide again after 3 seconds
+            controlsTimeout = setTimeout(() => {
+                this.removeAttribute('controls');
+            }, 3000);
+        });
+        
+        // Also show on click (for hybrid devices)
+        video.addEventListener('click', function(e) {
+            // Only handle if clicking on video itself, not controls
+            if (e.target === this || e.target.tagName === 'VIDEO') {
+                clearTimeout(controlsTimeout);
+                this.setAttribute('controls', 'controls');
+                
+                // Hide again after 3 seconds
+                controlsTimeout = setTimeout(() => {
+                    this.removeAttribute('controls');
+                }, 3000);
+            }
+        });
+    });
+}
+
 $(document).ready(function() {
     // Check for click events on the navbar burger icon
 
@@ -171,5 +216,8 @@ $(document).ready(function() {
     
     // Setup autoplay for all videos when scrolled into view
     setupAllVideosAutoplay();
+    
+    // Setup video controls visibility
+    setupVideoControls();
 
 })
