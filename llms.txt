@@ -1,0 +1,30 @@
+# decPLM
+
+> Multi-Quadruped Cooperative Object Transport: Learning Decentralized Pinch-Lift-Move. Bikram Pandit, Aayam Kumar Shrestha, Alan Fern. IEEE International Conference on Robotics and Automation (ICRA), 2026.
+
+decPLM is a decentralized reinforcement learning framework that lets teams of quadruped-arm robots pinch, lift, and transport ungraspable objects using only local sensing and contact forces, without communication or rigid coupling. Trained with just two robots, the policy generalizes to teams of 2-10 robots and diverse object geometries and masses.
+
+## Links
+- [Paper (PDF)](https://arxiv.org/pdf/2509.14342)
+- [arXiv abstract](https://arxiv.org/abs/2509.14342)
+- [arXiv (HTML)](https://arxiv.org/html/2509.14342v3)
+- [Code](https://github.com/osudrl/Decentralized-Pinch-Lift-Move)
+- [Video](https://youtu.be/D8OR4c2wDTE)
+
+## Authors
+Bikram Pandit, Aayam Kumar Shrestha, Alan Fern — Dynamics Robotics and AI Lab (DRAIL), Oregon State University.
+
+## Citation
+```bibtex
+@inproceedings{pandit2026decplm,
+  title={Multi-Quadruped Cooperative Object Transport: Learning Decentralized Pinch-Lift-Move},
+  author={Pandit, Bikram and Shrestha, Aayam Kumar and Fern, Alan},
+  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
+  year={2026},
+  organization={IEEE}
+}
+```
+
+## Related work from the same lab
+- [decMHT](https://decmht.github.io/) — Learning Multi-Humanoid Pickup and Transport via Decentralized Object-Centric Control (under review)
+- [decMBC](https://decmbc.github.io/) — Learning Decentralized Multi-Biped Control for Payload Transport (CoRL 2025)
